@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainlayout"
+    >
+//顶部控件
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="10"
+    
+    >
+    
+    <FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    //角色信息显示部分
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="100dip"
+    android:layout_height="60dip"
+    android:background="@color/white"
+    
+    >
+    >
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" 昵称："
+    android:textColor="#000000">
+    </TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/name"
+    android:textColor="#000000">
+    </TextView>
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" 等级："
+    android:textColor="#000000">
+    </TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/level"
+    android:textColor="#000000">
+    </TextView>
+    </LinearLayout>
+   <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" 年龄："
+    android:textColor="#000000">
+    </TextView>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playtime"
+    android:textColor="#000000">
+    </TextView>
+    </LinearLayout>
+    </LinearLayout>
+  
+  系统按钮操作部分  
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/toplayout">
+    <RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="7.5"
+    android:id="@+id/toppointlayout"
+    >
+   
+    <ImageView
+    android:id="@+id/point"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hide"
+    android:layout_centerInParent="true"
+    /> 
+    </RelativeLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.5"
+    android:id="@+id/topbuttonlayout"
+    android:visibility="invisible"
+    >
+     <Button
+    android:id="@+id/create"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/create"
+    />
+     <Button
+    android:id="@+id/cback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/cback"
+    />
+    <Button
+    android:id="@+id/camera"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/camera"
+    />
+   
+    <Button
+    android:id="@+id/sound"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"    
+    />
+    <Button
+    android:id="@+id/help"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/help"
+    />
+   
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>
+</LinearLayout>
+
+
+//下部控件
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="2">
+    
+    
+ //角色控件     
+ <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+  //角色头部控件  
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="2.5"
+    android:id="@+id/headlayout"
+    android:gravity="center_horizontal"
+    >
+    <ImageView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+    android:id="@+id/rolehead"
+    android:layout_centerHorizontal="true"
+    ></ImageView>
+       
+</RelativeLayout> 
+
+
+//角色身体控件
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+    
+    
+    <AbsoluteLayout    
+  android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"
+  android:layout_centerHorizontal="true"
+>
+  
+  //原始
+  <LinearLayout
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_x="0px"        
+    android:layout_y="0px"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+  <ImageView
+  android:id="@+id/imageview001"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"  
+  >
+  </ImageView>
+  </LinearLayout>
+  <LinearLayout
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+  <ImageView
+  android:id="@+id/imageview002"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"  
+  >
+  </ImageView>
+  </LinearLayout>
+  </LinearLayout>
+  
+ 
+    //转圈，眩晕
+    <ImageView
+  android:id="@+id/imageview07"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:src="@drawable/a7_1"
+  android:scaleType="fitCenter"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  <ImageView
+  android:id="@+id/imageview08"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:src="@drawable/a7_2"
+  android:scaleType="fitCenter"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView> 
+   <ImageView
+  android:id="@+id/imageview09"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/a7_3"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView> 
+   <ImageView
+  android:id="@+id/imageview10"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/a7_4"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView> 
+
+<!--src是指引用动画帧集合来控制动画-->
+//大猩猩,鳄鱼
+  <ImageView
+  android:id="@+id/imageview02"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/picture_animation"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  
+  //跳舞
+  <ImageView
+  android:id="@+id/imageview03"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/pic"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  
+   //卓别林,看飞机
+  <ImageView
+  android:id="@+id/imageview01"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/pic2"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  
+  //恭喜发财，笑
+    <ImageView
+  android:id="@+id/imageview04"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/smiling"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  
+  //踢毽子
+   <ImageView
+  android:id="@+id/imageview05"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/smiling2"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  
+   //大肚子,投篮球动作
+   <ImageView
+  android:id="@+id/imageview11"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/play"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView>
+  
+  //没有肚子,投篮动作
+    <ImageView
+  android:id="@+id/imageview12"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/a4_3"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView> 
+  
+  <ImageView
+  android:id="@+id/imageview13"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:scaleType="fitCenter"
+  android:src="@drawable/a4_4"
+  android:layout_x="0px"        
+  android:layout_y="0px"
+  >
+  </ImageView> 
+</AbsoluteLayout>
+    
+    
+    
+    
+</RelativeLayout>
+    
+    
+    
+    
+</LinearLayout>   
+  
+    
+    //动作按钮控件 
+   <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="3"
+    android:id="@+id/belowlayout">
+   
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.5"
+    android:id="@+id/belowbuttonlayout"
+    android:visibility="invisible"
+    >
+    
+    
+    //恢复原始
+   <ImageView
+  android:id="@+id/imageview5"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:src="@drawable/startp"
+  >
+  </ImageView>
+  
+  //大猩猩动作,鳄鱼动作
+  <ImageView
+  android:id="@+id/imageview2"
+ android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:src="@drawable/dxxp"
+  
+  >
+  </ImageView>
+  
+  //跳舞 
+   <ImageView
+  android:id="@+id/imageview3"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:src="@drawable/dancep"
+ 
+  >
+  </ImageView> 
+  
+  
+  //卓别林动作,看飞机
+    <ImageView
+  android:id="@+id/imageview1"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:src="@drawable/zblp"
+  
+  >
+  </ImageView>
+  
+  //拍肚子动作,投篮球
+<ImageView
+  android:id="@+id/imageview4"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:src="@drawable/pdzp"
+  
+  >
+  </ImageView>
+  
+    
+    </LinearLayout>
+   <RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="7.5"
+    android:id="@+id/belowpointlayout"
+    >
+   
+    <ImageView
+    android:id="@+id/belowpoint"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/belowhide"
+    android:layout_centerInParent="true"
+    /> 
+    </RelativeLayout>
+    
+</LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+

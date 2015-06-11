@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GameActivity!</string>
+    <string name="app_name">造画弄人</string>
+    <string name="shareimage">ShareImage</string>
+    <string name="level0">幼儿</string>
+    <string name="level1">小学生</string>
+    <string name="level2">中学生</string>
+    <string name="level3">大学生</string>
+    <color name="white">#FFFFFF</color>
+     <string name="introduction">欢迎进入角色创建界面，请按照下面的提示创建你喜欢的角色</string>
+    <string name="firstStep">第一步：上传头像</string>
+    <string name="secondStep">第二步：选择身体</string>
+    <string name="thirdStep">第三步：设置昵称</string>
+    <string name="nameHint">请输入昵称</string>
+    <string name="forthStep">第四步：选择性别</string>
+    <string name="maleRadio">男</string>
+    <string name="femaleRadio">女</string>
+    <string name="interest">第五步：输入他（她）的爱好</string>
+    <string name="buttonOK">确定</string>
+    <string name="buttonCancel">返回</string>
+</resources>
